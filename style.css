@@ -143,8 +143,11 @@ a {
 /* Header & Footer */
 
 footer {
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     color: rgb(115,110,110);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
 }
 
 /* Images & Background Images */
@@ -156,7 +159,10 @@ footer {
 }
 
 .bg-stone { background-image: url(/images/stone.png);}
-.bg-leaves { background-image: url(/images/leaves-light.png);}
+.bg-leaves { 
+    background-image: url(/images/zen-studio-1.jpg);
+    background-position: 50% 31%;
+}
 .bg-venue { background-image: url(/images/zen-studio-3.jpg);}
 .bg-map { background-image: url(/images/light-colored-map.png);}
 
@@ -168,4 +174,38 @@ footer {
 .shape-window {
     border-top-left-radius: 20rem;
     border-top-right-radius: 20rem;
+}
+
+
+/* Gridlex Media Queries 
+  @media (max-width: 36em)  Max 576px 	_xs-*
+  @media (max-width: 48em)  Max 768px 	_sm-*
+  @media (max-width: 64em)  Max 1024px 	_md-*
+  @media (max-width: 80em)  Max 1280px 	_lg-*
+*/
+
+/* Gridlex sm media query Max 768px _sm-* */
+@media (max-width: 48em) {
+    .sm-block    {display: block;}
+    .text-xxl    {font-size: 6.5rem;}
+    .text-xl     {font-size: 3.5rem;}
+
+    .bg-leaves { 
+        background-image: url(/images/leaves-light.png);
+        background-position: 50% 31%;
+    }
+
+    .text-center-sm {text-align: center;}
+}
+
+/* Gridlex xs media query Max 576px _sm-* */
+@media (max-width: 36em) {
+    .text-xxl    {font-size: 4.5rem;}
+    .text-xl     {font-size: 2.5rem;}
+    .text-lg     {font-size: 2.5rem;}
+}
+
+/* Gridlex xxs media query Max 350px */
+@media (max-width: 25em) {
+    .text-xxl    {font-size: 2.5rem;}
 }
